@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>花卉介紹</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+            display: block;
+            margin-top: 20px;
+        }
+        #description {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>花卉介紹</h1>
+    <button onclick="showHydrangea()">1. 繡球花</button>
+    <button onclick="showOncidium()">2. 文心蘭</button>
+
+    <img id="flowerImg" src="images.jpg"
+    <div id="description">
+        2024繡球花季訂於5月31日登場，屆時將會包含繡球花盛開、從陽明山、明池森林遊樂區等，預計全台超過10處景點綻放花的浪漫景緻。
+    </div>
+
+    <script>
+        function showHydrangea() {
+            document.getElementById("flowerImg").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hydrangea_macrophylla_3.jpg/320px-Hydrangea_macrophylla_3.jpg";
+            document.getElementById("description").innerText = "2024繡球花季訂於5月31日登場，屆時將會包含繡球花盛開、從陽明山、明池森林遊樂區等，預計全台超過10處景點綻放花的浪漫景緻。";
+        }
+
+        function showOncidium() {
+            document.getElementById("flowerImg").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oncidium_Aloha_Iwanaga.jpg/320px-Oncidium_Aloha_Iwanaga.jpg";
+            document.getElementById("description").innerText = "文心蘭又稱跳舞蘭，是熱帶地區常見的蘭花之一。花朵像跳舞的女孩，色澤鮮艷，非常受歡迎。";
+        </script>
+</body>
+</html>
